@@ -1,0 +1,14 @@
+lab02/Demo/.idea
+lab02/Demo/*.iws
+lab02/Demo/*.iml
+lab02/Demo/*.ipr
+lab02/Demo/out/
+lab02/Demo/!**/src/main/**/out/
+lab02/Demo/!**/src/test/**/out/
+lab02/Demo/.gradle
+lab02/Demo/build/
+lab02/Demo/!gradle/wrapper/gradle-wrapper.jar
+lab02/Demo/!**/src/main/**/build/
+lab02/Demo/!**/src/test/**/build/
+
+
