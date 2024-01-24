@@ -8,8 +8,8 @@ import java.util.Date;
  * @since 2024-01-23
  */
 @Data
-public class class3 {
-    private String Class3_string;
-    private Boolean class3_boolean;
-    private Date class3_date;
+public class Class1d {
+    private String class1d_string;
+    private Boolean class1d_boolean;
+    private Date class1d_date;
 }
