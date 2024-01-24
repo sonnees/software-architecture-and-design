@@ -2,9 +2,15 @@ package com.companyname.parser;
 
 import java.io.File;
 import java.util.Objects;
-
+/**
+ * @author sonnees
+ * @since 2024-01-23
+ */
 public class DirExplorer {
     public interface FileHandler {
+        /*
+            handle file
+         */
         void handle(int level, String path, File file);
     }
     public interface Filter {

@@ -3,8 +3,14 @@ package com.companyname.test;
 import com.companyname.parser.DirExplorer;
 
 import java.io.File;
-
+/**
+ * @author sonnees
+ * @since 2024-01-23
+ */
 public class TestDirExplorer {
+    /*
+        test DirExplorer
+     */
     public static void main(String[] args) {
         File projectDir = new File("../Demo/src/main/java/com/companyname/sample");
 
