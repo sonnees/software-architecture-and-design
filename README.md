@@ -1,4 +1,4 @@
-# Projects Jakarta EE
+# Lab 1
 - Sinh viên: **Nguyễn Văn Sơn**
 - Hướng dẫn: **TS. Võ Văn Hải**
 
