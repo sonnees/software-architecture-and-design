@@ -119,7 +119,7 @@ public class ListClassesExample {
         AtomicBoolean atomicBoolean = new AtomicBoolean(true);
         methods.forEach(m->{
             boolean checkMethodType1 = m.getName().asString().equals("equals") || m.getName().asString().equals("toString") || m.getName().asString().equals("hashCode");
-            boolean checkMethodType2 = m.getName().asString().equals("<init>") || m.getParameters().isEmpty();
+            boolean checkMethodType2 = m.getName().asString().equals("<init>") && m.getParameters().isEmpty();
             boolean isHaveComment = m.getComment().isPresent();
 
             if(!((checkMethodType1 || checkMethodType2) || isHaveComment)){
