@@ -11,4 +11,17 @@ lab02/Demo/!gradle/wrapper/gradle-wrapper.jar
 lab02/Demo/!**/src/main/**/build/
 lab02/Demo/!**/src/test/**/build/
 
+lab03/Demo/.idea
+lab03/Demo/*.iws
+lab03/Demo/*.iml
+lab03/Demo/*.ipr
+lab03/Demo/out/
+lab03/Demo/!**/src/main/**/out/
+lab03/Demo/!**/src/test/**/out/
+lab03/Demo/.gradle
+lab03/Demo/build/
+lab03/Demo/!gradle/wrapper/gradle-wrapper.jar
+lab03/Demo/!**/src/main/**/build/
+lab03/Demo/!**/src/test/**/build/
+
 

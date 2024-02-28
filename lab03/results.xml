@@ -1,0 +1,247 @@
+<?xml version="1.0"?>
+<JDepend>
+    <Packages>
+
+        <Package name="java.io">
+            <error>No stats available: package referenced, but not analyzed.</error>
+        </Package>
+
+        <Package name="java.lang">
+            <error>No stats available: package referenced, but not analyzed.</error>
+        </Package>
+
+        <Package name="java.lang.invoke">
+            <error>No stats available: package referenced, but not analyzed.</error>
+        </Package>
+
+        <Package name="java.util">
+            <error>No stats available: package referenced, but not analyzed.</error>
+        </Package>
+
+        <Package name="java.util.concurrent.atomic">
+            <error>No stats available: package referenced, but not analyzed.</error>
+        </Package>
+
+        <Package name="javax.xml.parsers">
+            <error>No stats available: package referenced, but not analyzed.</error>
+        </Package>
+
+        <Package name="jdepend.framework">
+            <error>No stats available: package referenced, but not analyzed.</error>
+        </Package>
+
+        <Package name="jdepend.xmlui">
+            <error>No stats available: package referenced, but not analyzed.</error>
+        </Package>
+
+        <Package name="vn.edu.iuh.fit.jdepend.dto">
+            <Stats>
+                <TotalClasses>7</TotalClasses>
+                <ConcreteClasses>7</ConcreteClasses>
+                <AbstractClasses>0</AbstractClasses>
+                <Ca>1</Ca>
+                <Ce>3</Ce>
+                <A>0</A>
+                <I>0.75</I>
+                <D>0.25</D>
+                <V>1</V>
+            </Stats>
+
+            <AbstractClasses>
+            </AbstractClasses>
+
+            <ConcreteClasses>
+                <Class sourceFile="AccountCreateDTO.java">
+                    vn.edu.iuh.fit.jdepend.dto.AccountCreateDTO
+                </Class>
+                <Class sourceFile="AccountLoginDTO.java">
+                    vn.edu.iuh.fit.jdepend.dto.AccountLoginDTO
+                </Class>
+                <Class sourceFile="ErrorPackage.java">
+                    vn.edu.iuh.fit.jdepend.dto.ErrorPackage
+                </Class>
+                <Class sourceFile="Package.java">
+                    vn.edu.iuh.fit.jdepend.dto.Package
+                </Class>
+                <Class sourceFile="StatisticsField.java">
+                    vn.edu.iuh.fit.jdepend.dto.StatisticsField
+                </Class>
+                <Class sourceFile="StatsPackage.java">
+                    vn.edu.iuh.fit.jdepend.dto.StatsPackage
+                </Class>
+                <Class sourceFile="TypePackage.java">
+                    vn.edu.iuh.fit.jdepend.dto.TypePackage
+                </Class>
+            </ConcreteClasses>
+
+            <DependsUpon>
+                <Package>java.lang</Package>
+                <Package>java.util</Package>
+                <Package>vn.edu.iuh.fit.jdepend.recursion</Package>
+            </DependsUpon>
+
+            <UsedBy>
+                <Package>vn.edu.iuh.fit.jdepend.parser</Package>
+            </UsedBy>
+        </Package>
+
+        <Package name="vn.edu.iuh.fit.jdepend.entity">
+            <Stats>
+                <TotalClasses>5</TotalClasses>
+                <ConcreteClasses>5</ConcreteClasses>
+                <AbstractClasses>0</AbstractClasses>
+                <Ca>0</Ca>
+                <Ce>5</Ce>
+                <A>0</A>
+                <I>1</I>
+                <D>0</D>
+                <V>1</V>
+            </Stats>
+
+            <AbstractClasses>
+            </AbstractClasses>
+
+            <ConcreteClasses>
+                <Class sourceFile="Account.java">
+                    vn.edu.iuh.fit.jdepend.entity.Account
+                </Class>
+                <Class sourceFile="AuthChatMessage.java">
+                    vn.edu.iuh.fit.jdepend.entity.AuthChatMessage
+                </Class>
+                <Class sourceFile="AuthChatMessage.java">
+                    vn.edu.iuh.fit.jdepend.entity.AuthChatMessage$AuthChatMessageBuilder
+                </Class>
+                <Class sourceFile="Profile.java">
+                    vn.edu.iuh.fit.jdepend.entity.Profile
+                </Class>
+                <Class sourceFile="Setting.java">
+                    vn.edu.iuh.fit.jdepend.entity.Setting
+                </Class>
+            </ConcreteClasses>
+
+            <DependsUpon>
+                <Package>java.lang</Package>
+                <Package>java.lang.invoke</Package>
+                <Package>java.util</Package>
+                <Package>vn.edu.iuh.fit.jdepend.enums</Package>
+                <Package>vn.edu.iuh.fit.jdepend.recursion</Package>
+            </DependsUpon>
+
+            <UsedBy>
+            </UsedBy>
+        </Package>
+
+        <Package name="vn.edu.iuh.fit.jdepend.enums">
+            <Stats>
+                <TotalClasses>3</TotalClasses>
+                <ConcreteClasses>3</ConcreteClasses>
+                <AbstractClasses>0</AbstractClasses>
+                <Ca>1</Ca>
+                <Ce>1</Ce>
+                <A>0</A>
+                <I>0.5</I>
+                <D>0.5</D>
+                <V>1</V>
+            </Stats>
+
+            <AbstractClasses>
+            </AbstractClasses>
+
+            <ConcreteClasses>
+                <Class sourceFile="AllowMessaging.java">
+                    vn.edu.iuh.fit.jdepend.enums.AllowMessaging
+                </Class>
+                <Class sourceFile="ShowBirthday.java">
+                    vn.edu.iuh.fit.jdepend.enums.ShowBirthday
+                </Class>
+                <Class sourceFile="Type.java">
+                    vn.edu.iuh.fit.jdepend.enums.Type
+                </Class>
+            </ConcreteClasses>
+
+            <DependsUpon>
+                <Package>java.lang</Package>
+            </DependsUpon>
+
+            <UsedBy>
+                <Package>vn.edu.iuh.fit.jdepend.entity</Package>
+            </UsedBy>
+        </Package>
+
+        <Package name="vn.edu.iuh.fit.jdepend.parser">
+            <Stats>
+                <TotalClasses>1</TotalClasses>
+                <ConcreteClasses>1</ConcreteClasses>
+                <AbstractClasses>0</AbstractClasses>
+                <Ca>0</Ca>
+                <Ce>9</Ce>
+                <A>0</A>
+                <I>1</I>
+                <D>0</D>
+                <V>1</V>
+            </Stats>
+
+            <AbstractClasses>
+            </AbstractClasses>
+
+            <ConcreteClasses>
+                <Class sourceFile="XMLParser.java">
+                    vn.edu.iuh.fit.jdepend.parser.XMLParser
+                </Class>
+            </ConcreteClasses>
+
+            <DependsUpon>
+                <Package>java.io</Package>
+                <Package>java.lang</Package>
+                <Package>java.lang.invoke</Package>
+                <Package>java.util</Package>
+                <Package>java.util.concurrent.atomic</Package>
+                <Package>javax.xml.parsers</Package>
+                <Package>jdepend.framework</Package>
+                <Package>jdepend.xmlui</Package>
+                <Package>vn.edu.iuh.fit.jdepend.dto</Package>
+            </DependsUpon>
+
+            <UsedBy>
+            </UsedBy>
+        </Package>
+
+        <Package name="vn.edu.iuh.fit.jdepend.recursion">
+            <Stats>
+                <TotalClasses>2</TotalClasses>
+                <ConcreteClasses>2</ConcreteClasses>
+                <AbstractClasses>0</AbstractClasses>
+                <Ca>2</Ca>
+                <Ce>1</Ce>
+                <A>0</A>
+                <I>0.33</I>
+                <D>0.67</D>
+                <V>1</V>
+            </Stats>
+
+            <AbstractClasses>
+            </AbstractClasses>
+
+            <ConcreteClasses>
+                <Class sourceFile="Recursion.java">
+                    vn.edu.iuh.fit.jdepend.recursion.Recursion
+                </Class>
+                <Class sourceFile="UserRole.java">
+                    vn.edu.iuh.fit.jdepend.recursion.UserRole
+                </Class>
+            </ConcreteClasses>
+
+            <DependsUpon>
+                <Package>java.lang</Package>
+            </DependsUpon>
+
+            <UsedBy>
+                <Package>vn.edu.iuh.fit.jdepend.dto</Package>
+                <Package>vn.edu.iuh.fit.jdepend.entity</Package>
+            </UsedBy>
+        </Package>
+    </Packages>
+
+    <Cycles>
+    </Cycles>
+</JDepend>
