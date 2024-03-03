@@ -1,24 +1,17 @@
-# Exercises 3
+# Exercises 4
 - Sinh viên: **Nguyễn Văn Sơn**
 - Hướng dẫn: **TS. Võ Văn Hải**
 
 ## Demo Code
-### 3.1: jdepend
+### Jdepend
 
-https://github.com/sonnees/software-architecture-and-design/assets/110987763/d311e00a-f7aa-4d96-957a-04ba2142c383
+https://github.com/sonnees/software-architecture-and-design/assets/110987763/dcbf5d66-d3d7-4150-884d-03f345b0f19f
 
-### 3.2: write xml
+### Jdepend UI
+https://github.com/sonnees/software-architecture-and-design/assets/110987763/f66534ba-0f7c-4cd4-ba1c-3fe61e0ad699
 
-https://github.com/sonnees/software-architecture-and-design/assets/110987763/87551e94-7d87-42c4-8208-17b5f31d906d
-
-### 3.3: read xml and statistics
-
-https://github.com/sonnees/software-architecture-and-design/assets/110987763/87d873fd-d880-4878-abb1-c5d14f40bc65
-
-
-
-
-
+### Nodejs
+https://github.com/sonnees/software-architecture-and-design/assets/110987763/b8268202-8a89-46ea-be0c-c57fd2eaa096
 
 
 
