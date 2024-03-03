@@ -42,8 +42,6 @@ public class Lab03Application {
 
 				String path = "../lab03/build/classes/java/main/vn/edu/iuh/fit/jdepend";
 				xmlParser.writeXML(path);
-
-				xmlParser.readXML("../lab03/results.xml");
 			}
 		};
 	}
