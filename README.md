@@ -1,17 +1,12 @@
-# Exercises 4
+# Exercises 5
 - Sinh viên: **Nguyễn Văn Sơn**
 - Hướng dẫn: **TS. Võ Văn Hải**
 
 ## Demo Code
-### Jdepend
+### Using ActiveMQ with Spring Boot
 
-https://github.com/sonnees/software-architecture-and-design/assets/110987763/dcbf5d66-d3d7-4150-884d-03f345b0f19f
+https://github.com/sonnees/software-architecture-and-design/assets/110987763/04ba1ff6-b199-4df4-9c98-3ff723126fe6
 
-### Jdepend UI
-https://github.com/sonnees/software-architecture-and-design/assets/110987763/f66534ba-0f7c-4cd4-ba1c-3fe61e0ad699
-
-### Nodejs
-https://github.com/sonnees/software-architecture-and-design/assets/110987763/b8268202-8a89-46ea-be0c-c57fd2eaa096
 
 
 
