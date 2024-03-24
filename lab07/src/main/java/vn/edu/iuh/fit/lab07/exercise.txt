@@ -1,0 +1,6 @@
+Tinh toan gia tri da thuc khi biet x. Voi da thuc duoc nhap dang chuoi nhu vi du sau
+
+String dathuc = "-5x^3 + 9x^6 - 3x + 6x^2 + 8";
+source-> parse(IN: dathuc, OUT:list items / objects?)
+	-> {calculate(IN:each item, OUT: value -with x specified)}
+	-> Final OUT: gia tri da thuc
