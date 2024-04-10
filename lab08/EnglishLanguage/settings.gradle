@@ -1,0 +1,3 @@
+rootProject.name = 'EnglishLanguage'
+includeBuild 'C:\\SON.admin\\VIII\\Architecture\\software-architecture-and-design\\lab08\\Language'
+

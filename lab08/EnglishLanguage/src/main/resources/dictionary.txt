@@ -1,0 +1,129 @@
+apple
+    - Quả táo
+    - Một loại trái cây có vị ngọt và có thể được ăn sống hoặc được sử dụng trong nấu ăn.
+    - Loại trái cây phổ biến, thường được dùng trong nhiều món ăn và đồ uống khác nhau.
+    - Quả táo thường được sử dụng làm nguyên liệu chính trong việc làm nước ép trái cây và bánh.
+
+banana
+    - Quả chuối
+    - Một loại trái cây có vỏ màu vàng, hình dạng cong, và thường được ăn sống.
+    - Loại trái cây giàu chất dinh dưỡng, chứa nhiều kali, vitamin và chất xơ.
+    - Quả chuối thường được sử dụng trong việc làm sinh tố, bánh và các món tráng miệng.
+
+cat
+    - Con mèo
+    - Một loài động vật có bốn chân, thường được nuôi làm thú cưng trong các gia đình.
+    - Loài động vật linh hoạt và thân thiện, thường được người ta yêu quý và chăm sóc.
+    - Con mèo có thói quen rình mò và săn mồi, nhưng cũng thường hiền lành và thân thiện với con người.
+
+dog
+    - Con chó
+    - Một loài động vật có bốn chân, thường được nuôi làm thú cưng hoặc làm thú săn.
+    - Loài động vật trung thành và thông minh, thường được coi là bạn đồng hành đáng tin cậy của con người.
+    - Con chó có nhiều giống và kích thước khác nhau, từ nhỏ nhắn đến to lớn, và có thể được huấn luyện để làm nhiều công việc khác nhau.
+
+elephant
+    - Con voi
+    - Một loài động vật lớn có bốn chân, sừng cong và vòi dài, thường được tìm thấy ở các khu vực nhiệt đới và cận nhiệt đới.
+    - Loài động vật thông minh và mạnh mẽ, con voi thường được coi là biểu tượng của sức mạnh và sự thông minh.
+    - Con voi có thể sống trong môi trường rừng hoặc đồng cỏ, và thường là loài động vật du lịch được quan tâm và bảo vệ.
+
+flower
+    - Bông hoa
+    - Một phần của cây thường được sử dụng để mang lại vẻ đẹp và màu sắc cho môi trường xung quanh.
+    - Loài hoa có thể mọc từ cây, cỏ hoặc các loại thực vật khác, và thường được sử dụng trong việc trang trí hoặc làm quà tặng.
+    - Hoa thường được coi là biểu tượng của sự tươi mới và sự đẹp đẽ, và có thể có màu sắc và hình dáng đa dạng.
+
+green
+    - màu xanh lá cây
+    - Một trong những màu sắc cơ bản của quang phổ, thường được tìm thấy trong tự nhiên trên lá cây và các loại thực vật khác.
+    - Màu xanh lá cây thường được coi là biểu tượng của sự sống, sự tươi mới và sự sinh sản.
+    - Màu xanh lá cây cũng thường được sử dụng để chỉ các sản phẩm hữu cơ và thân thiện với môi trường.
+
+house
+    - ngôi nhà
+    - Một công trình kiến trúc được sử dụng làm nơi ở cho con người hoặc gia đình.
+    - Ngôi nhà thường bao gồm các phòng ngủ, phòng tắm, phòng khách và nhà bếp để phục vụ cho nhu cầu sinh hoạt hàng ngày của con người.
+    - Ngôi nhà có thể được xây dựng từ nhiều vật liệu khác nhau như gạch, gỗ, xi măng hoặc kim loại.
+
+internet
+    - mạng internet
+    - Một hệ thống toàn cầu các máy tính kết nối với nhau thông qua mạng lưới công nghệ thông tin và viễn thông.
+    - Internet cho phép người dùng truy cập thông tin, dịch vụ trực tuyến và giao tiếp với nhau trên toàn thế giới.
+    - Internet đã trở thành một phần không thể thiếu của cuộc sống hiện đại, ảnh hưởng sâu sắc đến các lĩnh vực như giáo dục, kinh doanh và giải trí.
+
+java
+    - ngôn ngữ lập trình Java
+    - Một ngôn ngữ lập trình phổ biến, phát triển bởi Sun Microsystems và hiện được sở hữu và duy trì bởi Oracle Corporation.
+    - Java được thiết kế để có tính di động, đa nhiệm và an toàn, và thường được sử dụng để phát triển ứng dụng web, ứng dụng di động và ứng dụng máy tính.
+    - Java cũng là một nền tảng phát triển mạnh mẽ với một cộng đồng lớn
+
+Python
+    - Ngôn ngữ lập trình Python
+    - Một ngôn ngữ lập trình thông dịch, đa mục đích và dễ học.
+    - Python thường được sử dụng trong phát triển web, trí tuệ nhân tạo (AI), xử lý dữ liệu, và nhiều ứng dụng khác.
+    - Python có cộng đồng lớn và sôi động, với nhiều thư viện và framework hữu ích.
+
+JavaScript
+    - Ngôn ngữ lập trình JavaScript
+    - Một ngôn ngữ lập trình thông dịch, phía client-side, được sử dụng chủ yếu trong phát triển web.
+    - JavaScript là một phần không thể thiếu của web, được sử dụng để tạo các hiệu ứng động, giao diện người dùng tương tác, và nhiều ứng dụng web khác.
+    - JavaScript có một cộng đồng lớn và đa dạng các thư viện và framework để hỗ trợ phát triển.
+
+HTML
+    - Ngôn ngữ đánh dấu siêu văn bản (HTML)
+    - Một ngôn ngữ đánh dấu được sử dụng để tạo cấu trúc và định dạng nội dung của trang web.
+    - HTML là ngôn ngữ cơ bản của web, cung cấp các phần tử để tạo các phần tử như văn bản, hình ảnh, liên kết và biểu mẫu.
+    - HTML thường được kết hợp với CSS và JavaScript để tạo ra các trang web đẹp và tương tác.
+
+CSS
+    - Ngôn ngữ mô tả kiểu (CSS)
+    - Một ngôn ngữ được sử dụng để định dạng và trang trí giao diện của trang web.
+    - CSS cho phép bạn thay đổi màu sắc, font chữ, kích thước và bố cục của các phần tử HTML để tạo ra giao diện đẹp mắt và dễ đọc.
+    - CSS thường được sử dụng cùng với HTML và JavaScript để phát triển giao diện người dùng tương tác trên web.
+
+C++
+    - Ngôn ngữ lập trình C++
+    - Một ngôn ngữ lập trình đa mục đích, mạnh mẽ và phổ biến.
+    - C++ kế thừa từ ngôn ngữ C và bổ sung nhiều tính năng mới như lớp và đa hình.
+    - C++ được sử dụng rộng rãi trong phát triển phần mềm, trò chơi, hệ thống nhúng và nhiều ứng dụng khác.
+
+PHP
+    - Ngôn ngữ lập trình PHP
+    - Một ngôn ngữ lập trình phía server phổ biến, được sử dụng chủ yếu cho việc phát triển web.
+    - PHP cho phép bạn tạo các trang web động và tương tác, xử lý biểu mẫu, kết nối cơ sở dữ liệu và nhiều chức năng khác.
+    - PHP có một cộng đồng lớn và nhiều framework như Laravel và Symfony để hỗ trợ phát triển.
+
+Ruby
+    - Ngôn ngữ lập trình Ruby
+    - Một ngôn ngữ lập trình đơn giản, mạnh mẽ và linh hoạt.
+    - Ruby được sử dụng chủ yếu trong phát triển web, với framework Rails là phổ biến nhất.
+    - Ruby có cộng đồng nhiệt tình và nhiều thư viện để hỗ trợ phát triển.
+
+Swift
+    - Ngôn ngữ lập trình Swift
+    - Một ngôn ngữ lập trình phát triển bởi Apple để phát triển ứng dụng cho iOS, macOS, watchOS và tvOS.
+    - Swift thay thế Objective-C làm ngôn ngữ chính để phát triển ứng dụng trên nền tảng Apple.
+    - Swift được thiết kế để an toàn, hiệu quả và dễ đọc, với cú pháp đơn giản và linh hoạt.
+
+Kotlin
+    - Ngôn ngữ lập trình Kotlin
+    - Một ngôn ngữ lập trình đa năng, hiện đại và bổ sung cho Java trên nền tảng JVM và Android.
+    - Kotlin được Google công nhận là ngôn ngữ chính thức cho phát triển ứng dụng Android.
+    - Kotlin có cú pháp rõ ràng, an toàn, và có thể sử dụng cùng với Java trong các dự án hiện có.
+
+HTML
+    - Ngôn ngữ đánh dấu siêu văn bản (HTML)
+    - Một ngôn ngữ đánh dấu được sử dụng để tạo cấu trúc và định dạng nội dung của trang web.
+    - HTML là ngôn ngữ cơ bản của web, cung cấp các phần tử để tạo các phần tử như văn bản, hình ảnh, liên kết và biểu mẫu.
+    - HTML thường được kết hợp với CSS và JavaScript để tạo ra các trang web đẹp và tương tác.
+
+CSS
+    - Ngôn ngữ mô tả kiểu (CSS)
+    - Một ngôn ngữ được sử dụng để định dạng và trang trí giao diện của trang web.
+    - CSS cho phép bạn thay đổi màu sắc, font chữ, kích thước và bố cục của các phần tử HTML để tạo ra giao diện đẹp mắt và dễ đọc.
+    - CSS thường được sử dụng cùng với HTML và JavaScript để phát triển giao diện người dùng tương tác trên web.
+
+JavaScript
+    - Ngôn ngữ lập trình JavaScript
+    - Một ngôn ngữ lập trình thông dịch
