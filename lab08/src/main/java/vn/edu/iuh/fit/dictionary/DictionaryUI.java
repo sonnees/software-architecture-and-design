@@ -1,35 +1,57 @@
 package vn.edu.iuh.fit.dictionary;
 
 import com.example.englishlanguage.English;
+import com.example.language.DictReader;
+import com.example.language.Language;
+import com.example.vietnameselanguage.VietNam;
 import lombok.extern.slf4j.Slf4j;
-import org.springframework.stereotype.Component;
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.ConfigurableApplicationContext;
 
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.util.Map;
+import java.util.Objects;
 
 @Slf4j
-@Component
-public class Dictionary extends JFrame {
-    private final JTextField inputTextField;
-    private final JList<String> wordsList;
+@SpringBootApplication
+public class DictionaryUI extends JFrame {
+
+    private JTextField inputTextField;
+    private JList<String> wordsList;
     private JTextArea infoTextArea;
     private JScrollPane listScrollPane;
     private JButton searchButton;
+    Language language = null;
+    DictReader dictReader = null;
+    Map<String, String> dictMap = null;
 
-    English english = new English();
+    public DictionaryUI(@Value("${plugin.lang}") String lang) {
 
-    public Dictionary() {
-        setTitle("Dictionary");
+        switch (Objects.requireNonNull(lang)){
+            case "english-vietnamese" -> language =  new English();
+
+            case "vietnamese-english" -> language =  new VietNam();
+
+            default -> {}
+        }
+
+        dictReader = new DictReader();
+        dictMap = dictReader.readDictionary(language.getPATH());
+
+        setTitle(lang);
         setSize(600, 300);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
-        // Initialize components
         inputTextField = new JTextField();
         inputTextField.setFont(new Font("Arial", Font.BOLD, 16));
         wordsList = new JList<>();
-        wordsList.setListData(english.getListWord().toArray(String[]::new));
+
+        wordsList.setListData(dictMap.keySet().toArray(String[]::new));
 
         infoTextArea = new JTextArea(5, 20);
         infoTextArea.setLineWrap(true);
@@ -38,7 +60,6 @@ public class Dictionary extends JFrame {
         listScrollPane = new JScrollPane(wordsList);
         searchButton = new JButton("Search");
 
-        // Layout
         setLayout(new BorderLayout());
 
         JPanel inputPanel = new JPanel();
@@ -50,37 +71,26 @@ public class Dictionary extends JFrame {
         add(listScrollPane, BorderLayout.WEST);
         add(infoTextArea, BorderLayout.CENTER);
 
-        // Add action listener for the search button
         searchButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
                 String searchTerm = inputTextField.getText();
 
                 log.info("** searchTerm: {}", searchTerm);
-                String s = english.getDictionary().get(searchTerm.strip());
-                log.info("** infoTextArea: {}", s);
+
+                String s = dictMap.get(searchTerm.strip());
                 infoTextArea.setText(s);
-                // Call the method in the kernel to search for the term and update UI
-                // updateWordsList(kernel.search(searchTerm));
             }
         });
-    }
 
-    // Method to update the words list with new data
-    private void updateWordsList(String[] words) {
-        wordsList.setListData(words);
     }
-
     public static void main(String[] args) {
-        // Create an instance of the UI
-        SwingUtilities.invokeLater(new Runnable() {
-            @Override
-            public void run() {
-                PluginManager.loadPlugin("EnglishLanguage/modun.jar");
-                Dictionary dictionary = new Dictionary();
-                dictionary.setLocationRelativeTo(null);
-                dictionary.setVisible(true);
-            }
+        SwingUtilities.invokeLater(() -> {
+            ConfigurableApplicationContext context = SpringApplication.run(Main.class, args);
+            String lang = context.getEnvironment().getProperty("plugin.lang");
+            DictionaryUI dictionaryUI = new DictionaryUI(lang);
+            dictionaryUI.setLocationRelativeTo(null);
+            dictionaryUI.setVisible(true);
         });
     }
 }

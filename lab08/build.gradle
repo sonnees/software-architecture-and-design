@@ -29,6 +29,7 @@ dependencies {
 
     implementation project(':EnglishLanguage')
     implementation project(':Language')
+    implementation project(':VietnameseLanguage')
 }
 
 tasks.named('test') {
