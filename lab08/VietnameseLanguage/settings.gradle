@@ -1,3 +1,4 @@
-rootProject.name = 'EnglishLanguage'
+rootProject.name = 'VietnameseLanguage'
 include ':Language'
 project(':Language').projectDir = new File("C:\\SON.admin\\VIII\\Architecture\\software-architecture-and-design\\lab08\\Language")
+

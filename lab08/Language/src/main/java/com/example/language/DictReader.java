@@ -1,5 +1,7 @@
-package com.example.englishlanguage;
+package com.example.language;
 
+import lombok.AllArgsConstructor;
+import lombok.NoArgsConstructor;
 import org.springframework.stereotype.Component;
 
 import java.io.*;

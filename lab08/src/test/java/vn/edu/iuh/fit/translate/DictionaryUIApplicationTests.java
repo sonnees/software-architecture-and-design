@@ -6,7 +6,7 @@ import org.springframework.boot.test.context.SpringBootTest;
 import vn.edu.iuh.fit.dictionary.PluginManager;
 
 @SpringBootTest
-class DictionaryApplicationTests {
+class DictionaryUIApplicationTests {
 
     @Test
     void contextLoads() {

@@ -1,5 +1,6 @@
 package vn.edu.iuh.fit.dictionary;
 
+import com.example.language.Plugin;
 import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Component;
 

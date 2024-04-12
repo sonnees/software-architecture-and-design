@@ -1,0 +1,64 @@
+dâu
+    - Strawberry
+    - A small, sweet fruit with a red or sometimes pink skin and many tiny seeds on its surface.
+    - Strawberries are often eaten fresh or used in desserts such as cakes, pies, and ice cream.
+    - They are also rich in vitamin C and antioxidants.
+
+lê
+    - Pear
+    - A type of fruit with a thin skin, juicy flesh, and sweet taste.
+    - Pears are often eaten fresh or used in salads, desserts, and cooking.
+    - They are a good source of dietary fiber and vitamin C.
+
+nho
+    - Grape
+    - A small, round fruit that grows in clusters on vines.
+    - Grapes can be eaten fresh or used to make juice, wine
+
+xoài
+    - Mango
+    - A tropical fruit with a sweet, juicy flesh and a distinct aroma.
+    - Mangos are often eaten fresh or used in smoothies, salads, and desserts.
+    - hey are rich in vitamins A and C, as well as antioxidants.
+
+dừa
+    - Coconut
+    - A large fruit with a hard, brown shell and white flesh inside.
+    - Coconuts are used in many dishes and beverages, as well as for their oil and milk.
+    - They are rich in nutrients such as fiber, vitamins, and minerals.
+
+bưởi
+    - Pomelo
+    - A citrus fruit with a thick rind and sweet, tangy flesh.
+    - Pomelos are often eaten fresh or used in salads and desserts.
+    - They are rich in vitamin C and antioxidants.
+
+thanh long
+    - Dragon fruit
+    - A tropical fruit with a bright pink or yellow skin and white or pink flesh dotted with black seeds.
+    - Dragon fruits are often eaten fresh or used in various dishes and desserts.
+    - They are low in calories and rich in vitamins and minerals.
+
+cam sành
+    - Mandarin orange
+    - A small citrus fruit with a thin, loose skin and a sweet, juicy flesh.
+    - Mandarin oranges are easy to peel and often eaten fresh or used in salads and desserts.
+    - They are rich in vitamin C and antioxidants.
+
+dừa xiêm
+    - Coconut
+    - A tropical fruit with a hard, brown shell and sweet, creamy flesh inside.
+    - Coconuts are used in many cuisines worldwide for their flavor and versatility.
+    - Coconut milk, oil, and water are popular ingredients in cooking and baking.
+
+mận
+    - Plum
+    - A small, round fruit with a smooth skin and juicy flesh.
+    - Plums are often eaten fresh or dried and used in jams, sauces, and desserts.
+    - They are rich in vitamins and minerals, particularly vitamin C and potassium.
+
+ổi
+    - Guava
+    - A tropical fruit with a green or yellow skin and sweet, fragrant flesh.
+    - Guavas are often eaten fresh or used in juices, smoothies, and desserts.
+    - They are rich in vitamin C, fiber, and antioxidants.
