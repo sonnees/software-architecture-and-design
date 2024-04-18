@@ -2,29 +2,31 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Status Service</title>
+    <title>Accounting Service</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </head>
 <body >
     <h1 style="text-align: center;">
-        Status Service
+        Accounting Service
     </h1>
     <div style="display: flex; flex-direction: column;  justify-content: center; align-items: center;">
         <form>
             <div style="display: flex; justify-content: center;">
-                <button type="button" class="btn btn-success" onclick="checkStatus()">Check</button>
-                <input id="check" type="txt" style="padding-left: 20px;" placeholder="enter id user">
+                <button id="btn" type="button" class="btn btn-success" onclick="search()">Search All Item Status SUCCESS</button>
             </div>
         </form>
         
-        <table id="table" style="display: none; margin-left: 45%;" class="table table-hover">
+        <table id="table" style="display: none; margin-left: 50%;" class="table table-hover">
             <thead>
                 <tr>
                     <th>id</th>
-                    <th>img</th>
+                    <th>idUser</th>
                     <th>date</th>
+                    <th>priceBy</th>
+                    <th>status</th>
+                    <th>Option</th>
                 </tr>
             </thead>
             <tbody></tbody>
@@ -34,25 +36,9 @@
 
 
     <script>
-        function checkStatus() {
-            let check = document.getElementById("check").value;
-            if(check == ""){
-                alert("Please enter id user");
-                tbody.innerHTML = "";
-                alert("Error: " + data.message);
-                return
-            }
-            fetch(`http://localhost:8082/api/v1/status/check-status?idUser=${check}`)
-                .then(response => {
-                    if(response.ok){
-                        return response.json();
-                    }else{
-                        document.getElementById("table").style.display = "none";
-                        tbody.innerHTML = "";
-                        alert("Error: " + data.message);
-                        return;
-                    }}
-                )
+        function search() {
+            fetch('http://localhost:8082/api/v1/status/search-by-status')
+                .then(response => response.json())
                 .then(data => {
                     if(data.length > 0){
                         document.getElementById("table").style.display = "block";
@@ -66,18 +52,21 @@
                             let td3 = document.createElement("td");
                             let td4 = document.createElement("td");
                             let td5 = document.createElement("td");
+                            let td6 = document.createElement("td");
 
                             td1.innerHTML = element.id;
                             td2.innerHTML = element.idUser;
                             td3.innerHTML = element.date;
                             td4.innerHTML = element.priceBy;
                             td5.innerHTML = element.status;
+                            td6.innerHTML = `<button type="button" class="btn btn-info" onclick='pay(${element.priceBy},"${element.id}")'>Pay</button>`;
 
                             tr.appendChild(td1);
                             tr.appendChild(td2);
                             tr.appendChild(td3);
                             tr.appendChild(td4);
                             tr.appendChild(td5);
+                            tr.appendChild(td6);
 
                             tbody.appendChild(tr);
                         });
@@ -89,6 +78,28 @@
                 });
             
         }
+    
+    function pay(priceBy, id){
+        alert("Pay for id: "+id+" with price: "+priceBy);
+        fetch('http://localhost:8085/api/v1/accounting/create', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({
+                id: id,
+                priceBy: priceBy
+            })
+        })
+        .then(response => response.json())
+        .then(data => {
+            if(data.status === 200){
+                alert("Success");
+                document.getElementById("btn").click();
+                alert("Failed");
+            }
+        });
+    }
        
     </script>
 </body>
