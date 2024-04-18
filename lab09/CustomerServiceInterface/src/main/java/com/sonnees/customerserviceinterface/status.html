@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Quoting Service</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body >
+    <h1 style="text-align: center;">
+        Status Service
+    </h1>
+    <div style="display: flex; flex-direction: column;  justify-content: center; align-items: center;">
+        <form>
+            <div style="display: flex; justify-content: center;">
+                <button type="button" class="btn btn-success" onclick="checkStatus()">Check</button>
+                <input id="check" type="txt" style="padding-left: 20px;" placeholder="enter id user">
+            </div>
+        </form>
+        
+        <table id="table" style="display: none; margin-left: 45%;" class="table table-hover">
+            <thead>
+                <tr>
+                    <th>id</th>
+                    <th>idUser</th>
+                    <th>date</th>
+                    <th>priceBy</th>
+                    <th>status</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+
+    </div>
+
+
+    <script>
+        function checkStatus() {
+            let check = document.getElementById("check").value;
+            if(check == ""){
+                alert("Please enter id user");
+                tbody.innerHTML = "";
+                alert("Error: " + data.message);
+                return
+            }
+            fetch(`http://localhost:8082/api/v1/status/check-status?idUser=${check}`)
+                .then(response => {
+                    if(response.ok){
+                        return response.json();
+                    }else{
+                        document.getElementById("table").style.display = "none";
+                        tbody.innerHTML = "";
+                        alert("Error: " + data.message);
+                        return;
+                    }}
+                )
+                .then(data => {
+                    if(data.length > 0){
+                        document.getElementById("table").style.display = "block";
+                        let tbody = document.querySelector("tbody");
+
+                        tbody.innerHTML = "";
+                        data.forEach(element => {
+                            let tr = document.createElement("tr");
+                            let td1 = document.createElement("td");
+                            let td2 = document.createElement("td");
+                            let td3 = document.createElement("td");
+                            let td4 = document.createElement("td");
+                            let td5 = document.createElement("td");
+
+                            td1.innerHTML = element.id;
+                            td2.innerHTML = element.idUser;
+                            td3.innerHTML = element.date;
+                            td4.innerHTML = element.priceBy;
+                            td5.innerHTML = element.status;
+
+                            tr.appendChild(td1);
+                            tr.appendChild(td2);
+                            tr.appendChild(td3);
+                            tr.appendChild(td4);
+                            tr.appendChild(td5);
+
+                            tbody.appendChild(tr);
+                        });
+                    }else{
+                        alert("No data found");
+                        document.getElementById("table").style.display = "none";
+                        tbody.innerHTML = "";
+                    }
+                });
+            
+        }
+       
+    </script>
+</body>
+</html>
