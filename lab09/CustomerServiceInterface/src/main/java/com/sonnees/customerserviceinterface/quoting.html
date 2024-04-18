@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Quoting Service</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body >
+    <h1 style="text-align: center;">
+        Quoting Service
+    </h1>
+    <div style="display: flex; flex-direction: row;  justify-content: center; align-items: center;">
+        <form>
+            <div class="input-group">
+                <span class="input-group-addon">👀</span>
+                <input type="text" class="form-control" placeholder="id user" id="idUser" required>
+            </div>
+            <hr>
+            
+            <div class="input-group">
+                <span class="input-group-addon">📱</span>
+                <select class="form-control" id="category">
+                    <option value="IPHONE">IPHONE</option>
+                    <option value="ANDROID">ANDROID</option>
+                </select>
+            </div>
+            <br>
+            <div class="input-group">
+                <span class="input-group-addon">💲</span>
+                <input type="text" class="form-control" placeholder="Price" id="priceOrigin" required>
+            </div>
+            <br>
+            <div class="input-group">
+                <span class="input-group-addon">🕙</span>
+                <input type="date" class="form-control" placeholder="Ngày" id="dateBy">
+            </div>
+            <br>
+            <div class="input-group">
+                <span class="input-group-addon">〽️</span>
+                <select class="form-control" id="status">
+                    <option value="NEW_95">NEW 95%</option>
+                    <option value="NEW_90">NEW 90%</option>
+                    <option value="NEW_85">NEW 85%</option>
+                    <option value="NEW_80">NEW 80%</option>
+                </select>
+            </div>
+            <hr>
+            <div style="display: flex; justify-content: center;">
+                <button type="button" class="btn btn-success" onclick="checkPrice()">Check Price</button>
+                <input id="check-price" type="text" style="padding-left: 20px;" disabled>
+            </div>
+
+            <div id="hidden" style="display: none;">
+                <hr>
+                <div style="display: flex; justify-content: center;">
+                    <button type="button" class="btn btn-success" onclick="quoting()">Quoting Now</button>
+                </div>
+            </div>
+
+   
+        </form>
+
+    </div>
+
+
+    <script>
+        function checkPrice() {
+                fetch("http://localhost:8081/api/v1/quoting/check-price", {
+                    method: 'POST', 
+                    headers: {
+                        'Accept': 'application/json',
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({
+                        idUser: document.getElementById("idUser").value,
+                        category: document.getElementById("category").value,
+                        priceOrigin: document.getElementById("priceOrigin").value,
+                        dateBy: document.getElementById("dateBy").value,
+                        status: document.getElementById("status").value
+                    }),
+                })
+                    .then(response => response.json())
+                    .then(data => {
+                        document.getElementById("hidden").style.display = "block";
+                        
+                        document.getElementById("check-price").value = data.field;
+                    })
+                    .catch(error => {
+                        console.error('There has been a problem with your fetch operation:', error);
+                    });
+            }
+            
+        function quoting(){
+            let c = confirm("Confirm quoting");
+
+            if(c==true){
+                fetch("http://localhost:8081/api/v1/quoting/create", {
+                    method: 'POST', 
+                    headers: {
+                        'Accept': 'application/json',
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({
+                        idUser: document.getElementById("idUser").value,
+                        category: document.getElementById("category").value,
+                        priceOrigin: document.getElementById("priceOrigin").value,
+                        dateBy: document.getElementById("dateBy").value,
+                        status: document.getElementById("status").value
+                    }),
+                })
+                    .then(response => response.json())
+                    .then(data => {
+                        alert(data);
+                    })
+                    .catch(error => {
+                        console.error('There has been a problem with your fetch operation:', error);
+                    });
+            }
+
+        }
+    </script>
+</body>
+</html>
