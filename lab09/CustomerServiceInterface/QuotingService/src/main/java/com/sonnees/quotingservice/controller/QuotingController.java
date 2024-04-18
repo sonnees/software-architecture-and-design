@@ -29,7 +29,7 @@ public class QuotingController {
     WebClient.Builder builder;
 
     @PostMapping("/create")
-    @CrossOrigin("http://127.0.0.1:5500")
+    @CrossOrigin("*")
     public Mono<ResponseEntity<String>> create(@RequestBody QuotingDTO info){
         log.info("** {}", "enter create");
         WebClient webClient = builder.build();
@@ -64,7 +64,7 @@ public class QuotingController {
     }
 
     @PostMapping("/check-price")
-    @CrossOrigin("http://127.0.0.1:5500")
+    @CrossOrigin("*")
     public Mono<ResponseEntity<String>> checkPrice(@RequestBody QuotingDTO info){
         log.info("** {}", "enter checkPrice");
         return quotingService.calculateRepurchasePrice(info)

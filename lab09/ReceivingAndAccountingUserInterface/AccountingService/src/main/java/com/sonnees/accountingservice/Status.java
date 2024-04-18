@@ -1,4 +1,4 @@
-package com.sonnees.itemstatusservice;
+package com.sonnees.accountingservice;
 
 public enum Status {
     SHIPPING,
