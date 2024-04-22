@@ -1,0 +1,23 @@
+syntax = "proto3";
+
+option java_multiple_files = true;
+
+import "google/protobuf/empty.proto";
+
+package com.sonnees;
+
+message OrderRequest {
+  int64 id = 1;
+  string name = 2;
+  int64 price = 3;
+}
+
+message OrderResponse {
+  string status = 1;
+}
+
+service SendOrderService {
+  rpc sendOrder(OrderRequest) returns(OrderResponse){}
+}
+
+
